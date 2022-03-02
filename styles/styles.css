@@ -32,6 +32,7 @@ img{
 }
 header{
     margin: 0 auto;
+    margin-bottom: 30px;
     text-align: center;
     width: 45%;
 }
@@ -54,8 +55,6 @@ h1,h2{
     margin: 0;
     font-size: 2em;
 }
-
-
 
 .card{
     display: grid;
@@ -104,4 +103,24 @@ h1,h2{
 }
 .attribution a { 
     color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width:768px){
+    header{
+        width: 100%;
+    }
+    header p{
+        width: 60%;
+        margin: 0 auto;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+}
+@media screen and (max-width:426px){
+    header p, main{
+        width: 80%;
+    }
 }
